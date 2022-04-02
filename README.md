@@ -1,6 +1,6 @@
 # Dogecoin node for Docker
 
-![wow](http://dogecoin.com/imgs/dogecoin-300.png)
+![wow](https://dogecoin.com/assets/img/dogecoin-300.png)
 
 Run a Dogecoin fullnode in an isolated Docker container
 
