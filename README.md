@@ -16,13 +16,13 @@ Run a Dogecoin fullnode in an isolated Docker container
 
 It's not that hard, actually. There are two ways to get it up and running:
 
-### A. Pull and run the image from the [Docker Store](https://store.docker.com/community/images/gxgow/dogenode)
+### A. Pull and run the image from the [Docker Store](https://store.docker.com/community/images/goodolclint/dogenode)
 
 You only need to run one command to get it up and running:
 
 ```bash
 
-docker run -d -p 22556:22556 --name dogenode gxgow/dogenode
+docker run -d -p 22556:22556 --name dogenode goodolclint/dogenode
 
 ```
 
@@ -34,7 +34,7 @@ This requires a few extra steps, but it will get you the same result. It can be 
 
 ```bash
 # Clone the git repository
-git clone https://github.com/GXGOW/Docker-Dogecoin-fullnode.git
+git clone https://github.com/goodolclint/Docker-Dogecoin-fullnode.git
 
 # Perform your customisations (optional)
 
@@ -46,7 +46,7 @@ Same result, it's up and running.
 
 ## Optional: kickstart the node with a bootstrap file
 
-Initial sync may take a looooong time (total blockchain size as of writing is over 20 GB!). That's why it may be useful to have a bootstrap file to make the initial sync process a little faster.
+Initial sync may take a looooong time (total blockchain size as of writing is over 40 GB!). That's why it may be useful to have a bootstrap file to make the initial sync process a little faster.
 
 You can get the bootstrap.dat file from:
 
