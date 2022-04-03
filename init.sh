@@ -2,7 +2,6 @@
 
 ## Check if binaries are already installed
 cd ~
-export PATH=$PATH:~/dogecoin-bin/bin/
 ##Check if configuration file exists
 if [ ! -f ~/.dogecoin/dogecoin.conf ]; then
     mkdir ~/.dogecoin
@@ -23,11 +22,11 @@ echo Running dogecoin
 
 if [ "$NODES" != "null" ]; then
     echo "NODES $NODES"
+    sleep 65
     IFS=' ' read -ra dogenodes <<< $NODES
     for i in "${dogenodes[@]}"
     do
         echo "Adding Node $i"
-        sleep 15
         ~/dogecoin-bin/bin/dogecoin-cli addnode $i add
     done
 fi
