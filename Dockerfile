@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:11
 ADD init.sh /
 RUN apt update \
     && apt upgrade -y \
